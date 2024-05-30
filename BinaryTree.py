@@ -55,15 +55,15 @@ class BinaryTree:
             
         return result
 
-bt = BinaryTree()
-bt.insert(10)
-bt.insert(5)
-bt.insert(15)
-bt.insert(3)
-bt.insert(7)
-bt.insert(12)
-bt.insert(18)
+# bt = BinaryTree()
+# bt.insert(10)
+# bt.insert(5)
+# bt.insert(15)
+# bt.insert(3)
+# bt.insert(7)
+# bt.insert(12)
+# bt.insert(18)
 
-print("Inorder traversal:", bt.inorder_traversal(bt.root))
-print("Preorder traversal:", bt.preorder_traversal(bt.root))
-print("Postorder traversal:", bt.postorder_traversal(bt.root))
+# print("Inorder traversal:", bt.inorder_traversal(bt.root))
+# print("Preorder traversal:", bt.preorder_traversal(bt.root))
+# print("Postorder traversal:", bt.postorder_traversal(bt.root))
