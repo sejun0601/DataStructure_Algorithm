@@ -10,7 +10,7 @@ def bellmanFord(graph, start):
                     upper[there] = upper[here] + cost
                     updated = True
         if updated == False: break
-    
+
     if updated == True:
         upper = None
         
