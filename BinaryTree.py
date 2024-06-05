@@ -54,16 +54,27 @@ class BinaryTree:
             self.postorder_traversal(node.right, result)
             
         return result
+    
+    def search(self, node, value):
+        if value < node.value:
+            return self.search(node.left,value)
+        elif value == node.value:
+            return node.value
+        else:
+            return self.search(node.right, value) 
 
-# bt = BinaryTree()
-# bt.insert(10)
-# bt.insert(5)
-# bt.insert(15)
-# bt.insert(3)
-# bt.insert(7)
-# bt.insert(12)
-# bt.insert(18)
 
-# print("Inorder traversal:", bt.inorder_traversal(bt.root))
-# print("Preorder traversal:", bt.preorder_traversal(bt.root))
-# print("Postorder traversal:", bt.postorder_traversal(bt.root))
+bt = BinaryTree()
+bt.insert(10)
+bt.insert(5)
+bt.insert(15)
+bt.insert(3)
+bt.insert(7)
+bt.insert(12)
+bt.insert(18)
+
+print(bt.search(bt.root, 5))
+
+print("Inorder traversal:", bt.inorder_traversal(bt.root))
+print("Preorder traversal:", bt.preorder_traversal(bt.root))
+print("Postorder traversal:", bt.postorder_traversal(bt.root))
